@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="../static/js/public.js"></script>
+    <link rel="stylesheet" href="../static/css/public.css">
+    <link rel="stylesheet" href="../static/css/swiper-4.2.2.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>首页</title>
+</head>
+<body>
+    <div class="header index">
+        <div class="address">
+            <span>武汉</span>
+            <img src="../static/images/header-select.png" >
+        </div>
+        <div class="serach-box">
+            <input type="text" placeholder="服务种类,地点">
+            <img src="../static/images/header-search.png" >
+        </div>
+        <div class="tomine">
+            <div id='publish' class="op">
+                <span>发布</span>
+                <ul id='toPublish'>
+                    <li>发布需求</li>
+                    <li>发布服务</li>
+                </ul>
+            </div>
+            <div class="op">
+                <span>我的</span>
+            </div>
+        </div>
+        <div id="mask"></div>
+    </div>
+    <div class="main-content top">
+        <div class="index-banner">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../static/demo_img/images/index-banner.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../static/demo_img/images/index-banner.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../static/demo_img/images/index-banner.jpg" >
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- 共享服务 -->
+        <div class="index-server">
+            <div class="s-title">
+                <img src="../static/images/index-tl.png" >
+                <span>共享服务</span>
+                <img src="../static/images/index-tr.png" >
+            </div>
+            <ul class="list">
+                <li>
+                    <img src="../static/images/index-simg01.png" >
+                </li>
+                <li>
+                    <img src="../static/images/index-simg02.png" >
+                </li>
+                <li>
+                    <img src="../static/images/index-simg03.png" >
+                </li>
+            </ul>
+        </div>
+
+        <!-- 到家服务 -->
+        <div class="index-server">
+            <div class="s-title">
+                <img src="../static/images/index-tl.png" >
+                <span>到家服务</span>
+                <img src="../static/images/index-tr.png" >
+            </div>
+            <div class="process">
+                <img src="../static/images/index-next.png" alt="">
+            </div>
+        </div>
+
+        <ul class="index-server-list">
+            <li>
+                <div class="title">
+                    <h2>搬家服务</h2>
+                    <span>发布</span>
+                </div>
+                <div class="con">
+                    <a href="#">个人搬家</a>
+                    <a href="#">公司搬家</a>
+                    <a href="#">长途搬家速运</a>
+                    <a href="#">设备搬迁</a>
+                    <a href="#">起重吊床</a>
+                    <a href="#">钢琴搬运</a>
+                    <a href="#">空调移机</a>
+                    <a href="#">家具拆装</a>
+                    <a href="#">家具拆装</a>
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                    <h2>保洁清洗</h2>
+                    <span>发布</span>
+                </div>
+                <div class="con">
+                    <a href="#">家庭保洁</a>
+                    <a href="#">公司保洁</a>
+                    <a href="#">开荒保洁</a>
+                    <a href="#">除虫除蚁</a>
+                    <a href="#">石材养护</a>
+                    <a href="#">高空清洗</a>
+                    <a href="#">灯具清洗</a>
+                    <a href="#">油烟机清洗</a>
+                    <a href="#">地毯清洗</a>
+                    <a href="#">空调清洗</a>
+                    <a href="#">大扫除</a>
+                    <a href="#">甲醛检测</a>
+                    <a href="#">沙发翻新</a>
+                    <a href="#">家电清洗</a>
+                    <a href="#">瓷砖美缝</a>
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                    <h2>电器维修</h2>
+                    <span>发布</span>
+                </div>
+                <div class="con">
+                    <a href="#">空调拆装</a>
+                    <a href="#">手机维修</a>
+                    <a href="#">电脑维修</a>
+                    <a href="#">热水器维修</a>
+                    <a href="#">家电维修</a>
+                    <a href="#">家具维修</a>
+                    <a href="#">油烟机维修</a>
+                    <a href="#">燃气灶维修</a>
+                    <a href="#">影音家电维修</a>
+                    <a href="#">冰箱维修</a>
+                    <a href="#">电视维修</a>
+                    <a href="#">洗衣机维修</a>
+                    <a href="#">麻将机维修</a>
+                    <a href="#">地暖维修</a>
+                    <a href="#">数据恢复</a>
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                    <h2>房屋维修</h2>
+                    <span>发布</span>
+                </div>
+                <div class="con">
+                    <a href="#">房屋维修</a>
+                    <a href="#">开锁换锁</a>
+                    <a href="#">门窗维修</a>
+                    <a href="#">水管维修</a>
+                    <a href="#">墙面翻新</a>
+                    <a href="#">防水补漏</a>
+                    <a href="#">管道疏通</a>
+                    <a href="#">水务维修</a>
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                    <h2>保姆月嫂</h2>
+                    <span>发布</span>
+                </div>
+                <div class="con">
+                    <a href="#">月嫂</a>
+                    <a href="#">保姆</a>
+                    <a href="#">钟点工</a>
+                    <a href="#">催乳师</a>
+                    <a href="#">涉外家政</a>
+                    <a href="#">育婴师</a>
+                    <a href="#">家政服务</a>
+                    <a href="#">住家保姆</a>
+                    <a href="#">病人陪护</a>
+                    <a href="#">老人陪护</a>
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                    <h2>便民服务</h2>
+                    <span>发布</span>
+                </div>
+                <div class="con">
+                    <a href="#">房屋租赁</a>
+                    <a href="#">商铺租赁</a>
+                    <a href="#">汽车租赁</a>
+                    <a href="#">洗衣服务</a>
+                    <a href="#">礼品鲜花</a>
+                    <a href="#">商用房屋购买</a>
+                    <a href="#">配镜</a>
+                    <a href="#">房屋购买</a>
+                    <a href="#">写字楼租赁</a>
+                    <a href="#">乐器租赁</a>
+                    <a href="#">宠物狗服务</a>
+                    <a href="#">快递速运</a>
+                    <a href="#">星巴克</a>
+                    <a href="#">跑腿代办</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="../static/js/jquery-1.8.3.min.js"></script>
+    <script src="../static/js/swiper-4.2.2.min.js"></script>
+    <script src="../static/js/layer.js"></script>
+    <script src="../static/js/pop.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween:0,
+            centeredSlides: true,
+            autoplay:true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
