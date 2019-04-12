@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="../static/js/public.js"></script>
+    <link rel="stylesheet" href="../static/css/public.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>选择需求发布</title>
+</head>
+<body>
+    <div class="header other">
+        <div class="address">
+            <span>武汉</span>
+            <img src="../static/images/header-select.png" >
+        </div>
+        <div class="serach-box">
+            <input type="text" placeholder="服务种类,地点">
+            <img src="../static/images/header-search.png" >
+        </div>
+        <div class="tomine">
+            <div id='publish' class="op">
+                <span>发布</span>
+                <ul id='toPublish'>
+                    <li>发布需求</li>
+                    <li>发布服务</li>
+                </ul>
+            </div>
+            <div class="op">
+                <span>我的</span>
+            </div>
+        </div>
+        <div id="mask"></div>
+    </div>
+    <div class="main-content service">
+        <div class='service-wrap'>
+            <div class="left-nav-box">
+                <ul>
+                    <li class="on">搬家服务</li>
+                    <li>保洁清洗</li>
+                    <li>电器维修</li>
+                    <li>房屋维修</li>
+                    <li>保姆月嫂</li>
+                    <li>便民服务</li>
+                    <li>便民服务</li>
+                    <li>便民服务</li>
+                    <li>便民服务</li>
+                    <li>便民服务</li>
+                    <li>便民服务</li>
+                    <li>便民服务</li>
+                    <li>便民服务</li>
+                    <li>便民服务</li>
+                    <li>便民服务</li>
+                </ul>
+            </div>
+            <div class="right-nav-box">
+                <div class="con-box">
+                    <img src="../static/demo_img/images/d_img01.jpg" >
+                    <ul>
+                        <li>
+                            <span>个人搬家</span>
+                        </li>
+                        <li>
+                            <span>公司搬家</span>
+                        </li>
+                        <li>
+                            <span>长途搬家速运</span>
+                        </li>
+                        <li>
+                            <span>设备搬迁</span>
+                        </li>
+                        <li>
+                            <span>起重吊床</span>
+                        </li>
+                        <li>
+                            <span>钢琴搬运</span>
+                        </li>
+                        <li>
+                            <span>空调移机</span>
+                        </li>
+                        <li>
+                            <span>家具拆装</span>
+                        </li>
+                        <li>
+                            <span>家具拆装</span>
+                        </li>
+                        <li>
+                            <span>家具拆装</span>
+                        </li>
+                        <li>
+                            <span>家具拆装</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="con-box" style="display: none;">
+                    <img src="../static/demo_img/images/d_img01.jpg" >
+                    <ul>
+                        <li>
+                            <span>个人搬家1</span>
+                        </li>
+                        <li>
+                            <span>公司搬家1</span>
+                        </li>
+                        <li>
+                            <span>长途搬家速运1</span>
+                        </li>
+                        <li>
+                            <span>设备搬迁</span>
+                        </li>
+                        <li>
+                            <span>起重吊床</span>
+                        </li>
+                        <li>
+                            <span>钢琴搬运</span>
+                        </li>
+                        <li>
+                            <span>空调移机</span>
+                        </li>
+                        <li>
+                            <span>家具拆装</span>
+                        </li>
+                        <li>
+                            <span>家具拆装</span>
+                        </li>
+                        <li>
+                            <span>家具拆装</span>
+                        </li>
+                        <li>
+                            <span>家具拆装</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="srue-box">
+            <button class="btn-active">确定</button>
+        </div>
+    </div>
+    <script src="../static/js/jquery-1.8.3.min.js"></script>
+    <script src="../static/js/vue.min.js"></script>
+    <script src="../static/js/layer.js"></script>
+    <script src="../static/js/pop.js"></script>
+    <script>
+        $(function(){
+            // 设置内容区的高度
+            (function(){ 
+                var headerH = $(".header").height();
+                var btnH = $(".service .srue-box").height();
+                var cliH = document.documentElement.clientHeight || document.body.clientHeight;
+                $(".service .service-wrap").height(Math.floor(cliH - headerH - btnH-1));
+            }());
+            
+            var app = new Vue({
+                el:".main-content",
+                data:{
+
+                },
+                mounted:function(){
+                    // 右侧选中样式切换
+                    $(".right-nav-box .con-box ul li").click(function(){
+                        $(this).addClass("on").siblings().removeClass("on");
+                    });
+
+                    // 左侧点击切换
+                    $(".left-nav-box ul li").click(function(){
+                        var index = $(this).index();
+                        $(this).addClass("on").siblings().removeClass("on");
+                        $(".right-nav-box .con-box").eq(index).show().siblings().hide();
+                    })
+                },
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="../static/js/public.js"></script>
+    <link rel="stylesheet" href="../static/css/public.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>服务评价</title>
+</head>
+<body>
+    <div class="header other">
+        <div class="address">
+            <span>武汉</span>
+            <img src="../static/images/header-select.png" >
+        </div>
+        <div class="serach-box">
+            <input type="text" placeholder="服务种类,地点">
+            <img src="../static/images/header-search.png" >
+        </div>
+        <div class="tomine">
+            <div id='publish' class="op">
+                <span>发布</span>
+                <ul id='toPublish'>
+                    <li>发布需求</li>
+                    <li>发布服务</li>
+                </ul>
+            </div>
+            <div class="op">
+                <span>我的</span>
+            </div>
+        </div>
+        <div id="mask"></div>
+    </div>
+    <div class="main-content merchant">
+        <div class="user-infor">
+            <div class="user-img">
+                <div class="img">
+                    <img src="../static/images/default-img01.png" >
+                </div>
+                <div class="name">
+                    <div class="title">
+                        <h2>服务商2587</h2>
+                        <p>
+                            <img src="../static/images/label.png" >
+                            <span>已认证</span>
+                        </p>
+                    </div>
+                    <p class="address">
+                        <img src="../static/images/zuobiao.png" >
+                        <span>武汉市江夏区阳山大道32号</span>
+                    </p>
+                </div>
+            </div>
+            <img src="../static/images/to.png" >
+        </div>
+        <div class="details">
+            <ul class="classify">
+                <li>
+                    <div class="user-info">
+                        <div class="user-name">
+                            <div class="user-img">
+                                <img src="../static/demo_img/images/d_img03.png" >
+                            </div>
+                            <div class="user-details">
+                                <p>用户556668441</p>
+                                <p class="score">
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01.png" >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="time">2019-11-01</div>
+                    </div>
+                    <div class="con">
+                        <p class="text">搬家师傅很专业，速度也很快。</p>
+                        <div class="img-box">
+                            <img src="../static/demo_img/images/d_img02.jpg" >
+                            <img src="../static/demo_img/images/d_img02.jpg" >
+                            <img src="../static/demo_img/images/d_img02.jpg" >
+                            <img src="../static/demo_img/images/d_img02.jpg" >
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user-info">
+                        <div class="user-name">
+                            <div class="user-img">
+                                <img src="../static/demo_img/images/d_img03.png" >
+                            </div>
+                            <div class="user-details">
+                                <p>用户556668441</p>
+                                <p class="score">
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01.png" >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="time">2019-11-01</div>
+                    </div>
+                    <div class="con">
+                        <p class="text">搬家师傅很专业，速度也很快。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="user-info">
+                        <div class="user-name">
+                            <div class="user-img">
+                                <img src="../static/demo_img/images/d_img03.png" >
+                            </div>
+                            <div class="user-details">
+                                <p>用户556668441</p>
+                                <p class="score">
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01.png" >
+                                    <img src="../static/images/d_himg01off.png" >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="time">2019-11-01</div>
+                    </div>
+                    <div class="con">
+                        <p class="text">搬家师傅很专业，速度也很快。</p>
+                    </div>
+                </li>
+            </ul>
+            <button class="toMore">更多评价</button>
+        </div>
+    </div>
+    <script src="../static/js/jquery-1.8.3.min.js"></script>
+    <script src="../static/js/vue.min.js"></script>
+    <script src="../static/js/layer.js"></script>
+    <script src="../static/js/pop.js"></script>
+    <script>
+        $(function(){
+            var app = new Vue({
+                el:".main-content",
+                data:{
+                },
+                mounted:function(){
+                },
+            })
+        })
+    </script>
+</body>
+</html>

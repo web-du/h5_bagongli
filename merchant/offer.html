@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="../static/js/public.js"></script>
+    <link rel="stylesheet" href="../static/css/public.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>服务商报价</title>
+    <style>
+        .details{
+            padding-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header other">
+        <div class="address">
+            <span>武汉</span>
+            <img src="../static/images/header-select.png" >
+        </div>
+        <div class="serach-box">
+            <input type="text" placeholder="服务种类,地点">
+            <img src="../static/images/header-search.png" >
+        </div>
+        <div class="tomine">
+            <div id='publish' class="op">
+                <span>发布</span>
+                <ul id='toPublish'>
+                    <li>发布需求</li>
+                    <li>发布服务</li>
+                </ul>
+            </div>
+            <div class="op">
+                <span>我的</span>
+            </div>
+        </div>
+        <div id="mask"></div>
+    </div>
+    <div class="main-content merchant">
+        <div class="user-infor">
+            <div class="user-img">
+                <div class="img">
+                    <img src="../static/images/default-img01.png" >
+                </div>
+                <div class="name">
+                    <div class="title">
+                        <h2>服务商2587</h2>
+                        <p>
+                            <img src="../static/images/label.png" >
+                            <span>已认证</span>
+                        </p>
+                    </div>
+                    <p class="address">
+                        <img src="../static/images/zuobiao.png" >
+                        <span>武汉市江夏区阳山大道32号</span>
+                    </p>
+                </div>
+            </div>
+            <img src="../static/images/to.png" >
+        </div>
+        <div class="details">
+            <ul class="nav">
+                <li class="on">服务介绍</li>
+                <li>服务评价 <span>(133)</span></li>
+            </ul>
+            <ul class="classify">
+                <li>
+                    <div class="title">
+                        <span>服务位置</span>
+                    </div>
+                    <div class="con">
+                        <div class="address">
+                            <img src="../static/images/address.png" >
+                            <p class="text">湖北省武汉市武昌区紫泰山路武汉大学人民医院6号 楼38号附32号</p>
+                        </div>
+                        <p class="label">
+                            <span>个人搬家</span>
+                            <span>公司搬家</span>
+                            <span>长途搬家速运</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <span>服务描述</span>
+                    </div>
+                    <div class="con">
+                        <p class="text">快捷搬家速运服务介绍具体内容，服务介绍具体内容，具体内容，具体内容速运服务介绍，具体内介绍具体。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <span>接单时间</span>
+                    </div>
+                    <div class="con">
+                        <p class="text">周一至周五 08:00-12:00</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <span>商户相册</span>
+                    </div>
+                    <div class="con">
+                        <div class="img">
+                            <img src="../static/demo_img/images/d_img02.jpg" >
+                            <img src="../static/demo_img/images/d_img02.jpg" >
+                            <img src="../static/demo_img/images/d_img02.jpg" >
+                            <img src="../static/demo_img/images/d_img02.jpg" >
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 没有报价 -->
+            <div class="have-price" v-if='has'>
+                <button class="btn-sure btn-active">邀请报价</button>
+            </div>
+
+            <!-- 有报价 -->
+            <div class="receipt" v-if='!has'>
+                <div class="price">
+                    <p>报价：<span>￥<em>200</em>.00</span></p>
+                </div>
+                <div class="btn btn-active">同意接单</div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/jquery-1.8.3.min.js"></script>
+    <script src="../static/js/vue.min.js"></script>
+    <script src="../static/js/layer.js"></script>
+    <script src="../static/js/pop.js"></script>
+    <script>
+        $(function(){
+            var app = new Vue({
+                el:".main-content",
+                data:{
+                    //是否有报价
+                    has:false
+                },
+                mounted:function(){
+                },
+            })
+        })
+    </script>
+</body>
+</html>

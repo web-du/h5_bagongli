@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="../static/js/public.js"></script>
+    <link rel="stylesheet" href="../static/css/public.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>需求详情</title>
+    <style>
+        body,html{
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header other">
+        <div class="address">
+            <span>武汉</span>
+            <img src="../static/images/header-select.png" >
+        </div>
+        <div class="serach-box">
+            <input type="text" placeholder="服务种类,地点">
+            <img src="../static/images/header-search.png" >
+        </div>
+        <div class="tomine">
+            <div id='publish' class="op">
+                <span>发布</span>
+                <ul id='toPublish'>
+                    <li>发布需求</li>
+                    <li>发布服务</li>
+                </ul>
+            </div>
+            <div class="op">
+                <span>我的</span>
+            </div>
+        </div>
+        <div id="mask"></div>
+    </div>
+    <div class="main-content merchant">
+        <div class="modify-notice">
+            <img src="../static/images/d_himg02.png" >
+            <p>当前暂未收到报价，请耐心等待</p>
+        </div>
+        <div class="mine">
+            <div class="title">需求详情</div>
+            <ul class="list">
+                <li>
+                    <p>需要车型</p>
+                    <span>小型平板车</span>
+                </li>
+                <li>
+                    <p>人工搬运</p>
+                    <span>不需要</span>
+                </li>
+                <li>
+                    <p>搬出位置</p>
+                    <span>无电梯</span>
+                </li>
+                <li>
+                    <p>搬入位置</p>
+                    <span>有电梯</span>
+                </li>
+                <li>
+                    <p>搬家时间</p>
+                    <span>2018-12-12  12:00</span>
+                </li>
+                <li>
+                    <p>出发地</p>
+                    <span>武汉市洪山区天地1号3#2单元3002</span>
+                </li>
+                <li>
+                    <p>目的地</p>
+                    <span>武汉市东湖开发区青春蕙步行街 B栋4楼</span>
+                </li>
+            </ul>
+            <div class="map">
+                <img src="../static/demo_img/images/map.jpg" >            
+            </div>
+            <div class="other-sm">
+                <div class="title">其他说明</div>
+                <p>由于时间比较紧张，所以希望师傅准时到达！搬运过程中需要小心仔细！</p>
+            </div>
+            <div class="concat">
+                <p>联系电话</p>
+                <span>189****5698</span>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>关于我们</li>
+                <li>帮助中心</li>
+                <li>联系我们</li>
+            </ul>
+            <p>© Copyright  湖北省共享到家服务有限责任公司    备案号：鄂ICP备18011346号-2  </p>
+        </div>
+    </div>
+    <script src="../static/js/jquery-1.8.3.min.js"></script>
+    <script src="../static/js/vue.min.js"></script>
+    <script src="../static/js/layer.js"></script>
+    <script src="../static/js/pop.js"></script>
+    <script>
+        $(function(){
+            var app = new Vue({
+                el:".main-content",
+                data:{
+                },
+                mounted:function(){
+                },
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="../static/js/public.js"></script>
+    <link rel="stylesheet" href="../static/css/public.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>所有服务商</title>
+    <style>
+        body,html{
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header other">
+        <div class="address">
+            <span>武汉</span>
+            <img src="../static/images/header-select.png" >
+        </div>
+        <div class="serach-box">
+            <input type="text" placeholder="服务种类,地点">
+            <img src="../static/images/header-search.png" >
+        </div>
+        <div class="tomine">
+            <div id='publish' class="op">
+                <span>发布</span>
+                <ul id='toPublish'>
+                    <li>发布需求</li>
+                    <li>发布服务</li>
+                </ul>
+            </div>
+            <div class="op">
+                <span>我的</span>
+            </div>
+        </div>
+        <div id="mask"></div>
+    </div>
+    <div class="main-content merchant">
+        <ul class="all-merchant">
+            <li>
+                <div class="name">
+                    <div class="img">
+                        <img src="../static/images/default-img01.png" >
+                    </div>
+                    <div class="title">
+                        <h5>武汉搬家</h5>
+                        <p>
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01off.png" >
+                        </p>
+                    </div>
+                </div>
+                <div class="to-more">
+                    <p>暂无报价</p>
+                    <img src="../static/images/s-to.png" >
+                </div>
+            </li>
+            <li>
+                <div class="name">
+                    <div class="img">
+                        <img src="../static/images/default-img01.png" >
+                    </div>
+                    <div class="title">
+                        <h5>武汉搬家004</h5>
+                        <p>
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01off.png" >
+                        </p>
+                    </div>
+                </div>
+                <div class="to-more">
+                    <p>报价<em>￥200</em></p>
+                    <img src="../static/images/s-to.png" >
+                </div>
+            </li>
+            <li>
+                <div class="name">
+                    <div class="img">
+                        <img src="../static/images/default-img01.png" >
+                    </div>
+                    <div class="title">
+                        <h5>武汉搬家002</h5>
+                        <p>
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01off.png" >
+                        </p>
+                    </div>
+                </div>
+                <div class="to-more">
+                    <p>报价<em>￥200</em></p>
+                    <img src="../static/images/s-to.png" >
+                </div>
+            </li>
+            <li>
+                <div class="name">
+                    <div class="img">
+                        <img src="../static/images/default-img01.png" >
+                    </div>
+                    <div class="title">
+                        <h5>武汉搬家001</h5>
+                        <p>
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01off.png" >
+                        </p>
+                    </div>
+                </div>
+                <div class="to-more">
+                    <p>报价<em>￥200</em></p>
+                    <img src="../static/images/s-to.png" >
+                </div>
+            </li>
+            <li>
+                <div class="name">
+                    <div class="img">
+                        <img src="../static/images/default-img01.png" >
+                    </div>
+                    <div class="title">
+                        <h5>武汉搬家123</h5>
+                        <p>
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01.png" >
+                            <img src="../static/images/d_himg01off.png" >
+                        </p>
+                    </div>
+                </div>
+                <div class="to-more">
+                    <p>报价<em>￥200</em></p>
+                    <img src="../static/images/s-to.png" >
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="../static/js/jquery-1.8.3.min.js"></script>
+    <script src="../static/js/vue.min.js"></script>
+    <script src="../static/js/layer.js"></script>
+    <script src="../static/js/pop.js"></script>
+    <script>
+        $(function(){
+            var app = new Vue({
+                el:".main-content",
+                data:{
+                },
+                mounted:function(){
+                },
+            })
+        })
+    </script>
+</body>
+</html>

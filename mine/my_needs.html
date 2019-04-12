@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="../static/js/public.js"></script>
+    <link rel="stylesheet" href="../static/css/swiper-4.4.6.min.css">
+    <link rel="stylesheet" href="../static/css/public.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>我的需求</title>
+    <style>
+        body,html{
+            background-color: #f03745;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header other">
+        <div class="address">
+            <span>武汉</span>
+            <img src="../static/images/header-select.png" >
+        </div>
+        <div class="serach-box">
+            <input type="text" placeholder="服务种类,地点">
+            <img src="../static/images/header-search.png" >
+        </div>
+        <div class="tomine">
+            <div id='publish' class="op">
+                <span>发布</span>
+                <ul id='toPublish'>
+                    <li>发布需求</li>
+                    <li>发布服务</li>
+                </ul>
+            </div>
+            <div class="op">
+                <span>我的</span>
+            </div>
+        </div>
+        <div id="mask"></div>
+    </div>
+    <div class="main-content needs">
+        <div class="notice">您已发布9个需求</div>
+        <div class="swiper-box">
+            <!-- Swiper -->
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                        <div class="name">
+                            <h2>搬家服务</h2>
+                            <p>截止日期：2019.04.26</p>
+                        </div>
+                        <div class="img">
+                            <img src="../static/images/d_himg04.jpg" >
+                        </div>
+                        <div class="have">为您匹配<em>6</em>个服务商 > </div>
+                        <div class="have-swiper">
+                            <div class="swiper-container haveSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img04.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img05.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img06.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img07.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img04.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img05.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="see-more">查看需求详情 >> </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="name">
+                            <h2>保洁清洗</h2>
+                            <p>截止日期：2019.04.26</p>
+                        </div>
+                        <div class="img">
+                            <img src="../static/images/d_himg05.jpg" >
+                        </div>
+                        <div class="have">为您匹配<em>0</em>个服务商 > </div>
+                        <div class="has-no">正在为您匹配服务商，请耐心等待</div>
+                        <div class="see-more">查看需求详情 >> </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="name">
+                            <h2>保姆月嫂</h2>
+                            <p>截止日期：2019.04.26</p>
+                        </div>
+                        <div class="img">
+                            <img src="../static/images/d_himg06.jpg" >
+                        </div>
+                        <div class="have">为您匹配<em>0</em>个服务商 > </div>
+                        <div class="overdue">
+                            <h2>很抱歉，您的需求已过期</h2>
+                            <p>如有需要，请重新发布</p>
+                        </div>
+                        <div class="see-more">查看需求详情 >> </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="name">
+                            <h2>搬家服务</h2>
+                            <p>截止日期：2019.04.26</p>
+                        </div>
+                        <div class="img">
+                            <img src="../static/images/d_himg04.jpg" >
+                        </div>
+                        <div class="have">为您匹配<em>6</em>个服务商 > </div>
+                        <div class="have-swiper">
+                            <div class="swiper-container haveSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img04.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img05.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img06.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img07.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img04.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img05.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="see-more">查看需求详情 >> </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="name">
+                            <h2>保洁清洗</h2>
+                            <p>截止日期：2019.04.26</p>
+                        </div>
+                        <div class="img">
+                            <img src="../static/images/d_himg05.jpg" >
+                        </div>
+                        <div class="have">为您匹配<em>0</em>个服务商 > </div>
+                        <div class="has-no">正在为您匹配服务商，请耐心等待</div>
+                        <div class="see-more">查看需求详情 >> </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="name">
+                            <h2>保姆月嫂</h2>
+                            <p>截止日期：2019.04.26</p>
+                        </div>
+                        <div class="img">
+                            <img src="../static/images/d_himg06.jpg" >
+                        </div>
+                        <div class="have">为您匹配<em>0</em>个服务商 > </div>
+                        <div class="overdue">
+                            <h2>很抱歉，您的需求已过期</h2>
+                            <p>如有需要，请重新发布</p>
+                        </div>
+                        <div class="see-more">查看需求详情 >> </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="name">
+                            <h2>搬家服务</h2>
+                            <p>截止日期：2019.04.26</p>
+                        </div>
+                        <div class="img">
+                            <img src="../static/images/d_himg04.jpg" >
+                        </div>
+                        <div class="have">为您匹配<em>6</em>个服务商 > </div>
+                        <div class="have-swiper">
+                            <div class="swiper-container haveSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img04.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img05.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img06.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img07.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img04.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="details">
+                                            <img src="../static/demo_img/images/d_img05.png" >
+                                            <p>未报价</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="see-more">查看需求详情 >> </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="name">
+                            <h2>保洁清洗</h2>
+                            <p>截止日期：2019.04.26</p>
+                        </div>
+                        <div class="img">
+                            <img src="../static/images/d_himg05.jpg" >
+                        </div>
+                        <div class="have">为您匹配<em>0</em>个服务商 > </div>
+                        <div class="has-no">正在为您匹配服务商，请耐心等待</div>
+                        <div class="see-more">查看需求详情 >> </div>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="name">
+                            <h2>保姆月嫂</h2>
+                            <p>截止日期：2019.04.26</p>
+                        </div>
+                        <div class="img">
+                            <img src="../static/images/d_himg06.jpg" >
+                        </div>
+                        <div class="have">为您匹配<em>0</em>个服务商 > </div>
+                        <div class="overdue">
+                            <h2>很抱歉，您的需求已过期</h2>
+                            <p>如有需要，请重新发布</p>
+                        </div>
+                        <div class="see-more">查看需求详情 >> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="num">1</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="num">2</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="num">3</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="num">4</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="num">5</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="num">6</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="num">7</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="num">8</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="num">9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/jquery-1.8.3.min.js"></script>
+    <script src="../static/js/swiper-4.4.6.min.js"></script>
+    <script src="../static/js/vue.min.js"></script>
+    <script src="../static/js/layer.js"></script>
+    <script src="../static/js/pop.js"></script>
+    <script>
+        $(function(){
+            var app = new Vue({
+                el:".main-content",
+                data:{
+                },
+                mounted:function(){
+                    // 双向控制swiper
+                    var galleryThumbs = new Swiper('.gallery-thumbs', {
+                        spaceBetween: 10,
+                        slidesPerView:7,
+                        freeMode: true,
+                        watchSlidesVisibility: true,
+                        watchSlidesProgress: true,
+                    });
+                    var galleryTop = new Swiper('.gallery-top', {
+                        spaceBetween: 10,
+                        thumbs: {
+                            swiper: galleryThumbs
+                        }
+                    });
+
+                    // 小swiper
+                    var swiper = new Swiper('.haveSwiper', {
+                        slidesPerView: 5,
+                        spaceBetween:5,
+                        freeMode: true,
+                    });
+
+                },
+            })
+        })
+    </script>
+</body>
+</html>
