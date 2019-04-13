@@ -6,9 +6,12 @@
     <script src="../static/js/public.js"></script>
     <link rel="stylesheet" href="../static/css/public.css">
     <link rel="stylesheet" href="../static/css/index.css">
-    <title>服务商报价</title>
+    <title>查看需求详情</title>
     <style>
         .details{
+            padding-bottom: 1.5rem;
+        }
+        .mine{
             padding-bottom: 1.5rem;
         }
     </style>
@@ -54,66 +57,51 @@
                 </div>
             </div>
         </div>
-        <div class="details">
-            <ul class="classify">
+        <div class="buytel">
+            <p>联系电话 189****5698</p>
+            <em>购买联系电话</em>
+        </div>
+        <div class="mine">
+            <div class="title">需求详情</div>
+            <ul class="list">
                 <li>
-                    <div class="title">
-                        <span>服务位置</span>
-                    </div>
-                    <div class="con">
-                        <div class="address">
-                            <img src="../static/images/address.png" >
-                            <p class="text">湖北省武汉市武昌区紫泰山路武汉大学人民医院6号 楼38号附32号</p>
-                        </div>
-                        <p class="label">
-                            <span>个人搬家</span>
-                            <span>公司搬家</span>
-                            <span>长途搬家速运</span>
-                        </p>
-                    </div>
+                    <p>需要车型</p>
+                    <span>小型平板车</span>
                 </li>
                 <li>
-                    <div class="title">
-                        <span>服务描述</span>
-                    </div>
-                    <div class="con">
-                        <p class="text">快捷搬家速运服务介绍具体内容，服务介绍具体内容，具体内容，具体内容速运服务介绍，具体内介绍具体。</p>
-                    </div>
+                    <p>人工搬运</p>
+                    <span>不需要</span>
                 </li>
                 <li>
-                    <div class="title">
-                        <span>接单时间</span>
-                    </div>
-                    <div class="con">
-                        <p class="text">周一至周五 08:00-12:00</p>
-                    </div>
+                    <p>搬出位置</p>
+                    <span>无电梯</span>
                 </li>
                 <li>
-                    <div class="title">
-                        <span>商户相册</span>
-                    </div>
-                    <div class="con">
-                        <div class="img">
-                            <img src="../static/demo_img/images/d_img02.jpg" >
-                            <img src="../static/demo_img/images/d_img02.jpg" >
-                            <img src="../static/demo_img/images/d_img02.jpg" >
-                            <img src="../static/demo_img/images/d_img02.jpg" >
-                        </div>
-                    </div>
+                    <p>搬入位置</p>
+                    <span>有电梯</span>
+                </li>
+                <li>
+                    <p>搬家时间</p>
+                    <span>2018-12-12  12:00</span>
+                </li>
+                <li>
+                    <p>出发地</p>
+                    <span>武汉市洪山区天地1号3#2单元3002</span>
+                </li>
+                <li>
+                    <p>目的地</p>
+                    <span>武汉市东湖开发区青春蕙步行街 B栋4楼</span>
                 </li>
             </ul>
-
-            <!-- 没有报价 -->
-            <div class="have-price" v-if='has'>
-                <button class="btn-sure btn-active">邀请报价</button>
+            <div class="map">
+                <img src="../static/demo_img/images/map.jpg" >            
             </div>
-
-            <!-- 有报价 -->
-            <div class="receipt" v-if='!has'>
-                <div class="price">
-                    <p>报价：<span>￥<em>200</em>.00</span></p>
-                </div>
-                <div class="btn btn-active">同意接单</div>
+            <div class="other-sm">
+                <div class="title">其他说明</div>
+                <p>由于时间比较紧张，所以希望师傅准时到达！搬运过程中需要小心仔细！</p>
+            </div>
+            <div class="to-offer">
+                <button class="btn-sure btn-active">立即报价</button>
             </div>
         </div>
     </div>

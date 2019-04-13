@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="../static/js/public.js"></script>
+    <link rel="stylesheet" href="../static/css/public.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>购买联系电话</title>
+    <style>
+        .body,html{
+            height: 100%;
+            background-color: #f1f1f1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header other">
+        <div class="address">
+            <span>武汉</span>
+            <img src="../static/images/header-select.png" >
+        </div>
+        <div class="serach-box">
+            <input type="text" placeholder="服务种类,地点">
+            <img src="../static/images/header-search.png" >
+        </div>
+        <div class="tomine">
+            <div id='publish' class="op">
+                <span>发布</span>
+                <ul id='toPublish'>
+                    <li>发布需求</li>
+                    <li>发布服务</li>
+                </ul>
+            </div>
+            <div class="op">
+                <span>我的</span>
+            </div>
+        </div>
+        <div id="mask"></div>
+    </div>
+    <div class="main-content merchant view">
+        <div class="user-infor">
+            <div class="user-img">
+                <div class="img">
+                    <img src="../static/images/default-img01.png" >
+                </div>
+                <div class="name">
+                    <div class="title">
+                        <h2>黄女士</h2>
+                    </div>
+                    <p class="address">
+                        <img src="../static/images/address.png" >
+                        <span>武汉市武昌区武汉大学人民医院</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="buytel">
+            <p>联系电话</p>
+            <em>所需积分 40</em>
+        </div>
+        <div class="buytel">
+            <p>所需积分</p>
+            <p>40</p>
+        </div>
+        <div class="mine">
+            <div class="to-offer">
+                <button class="btn-sure btn-active">立即购买</button>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/jquery-1.8.3.min.js"></script>
+    <script src="../static/js/vue.min.js"></script>
+    <script src="../static/js/layer.js"></script>
+    <script src="../static/js/pop.js"></script>
+    <script>
+        $(function(){
+            var app = new Vue({
+                el:".main-content",
+                data:{
+                    //是否有报价
+                    has:false
+                },
+                mounted:function(){
+                },
+            })
+        })
+    </script>
+</body>
+</html>
